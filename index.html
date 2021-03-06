@@ -8,5 +8,70 @@
 </map>
 </div>
 <marquee id="ejemplo" direction="up">AQUI VA EL TEXTO QUE DESEES </marquee><a href="javascript:void(0);" onclick="getElementById('ejemplo').direction='down';">Hacia abajo</a>---<a href="javascript:void(0);" onclick="getElementById('ejemplo').direction='up';">Hacia arriba</a>
+<center><span style="font-family: Arial, Helvetica, sans-serif; font-size: x-small;"><script language="JavaScript" type="text/javascript">
+//<![CDATA[
+<!-- scrip presentado por truco95.jimdo.com -->
+var timerID = null
+var timerRunning = false
+var charNo = 0
+var charMax = 0
+var lineNo = 0
+var lineMax = 3
+var lineArr = new Array(lineMax)
+var urlArr = new Array(lineMax)
+lineArr[1] = "Texto número 1"
+urlArr[1] = "Enlace número 1"
+lineArr[2] = "Texto número 2"
+urlArr[2] = "Enlace número 2"
+lineArr[3] = "Texto número 3"
+urlArr[3] = "Enlace número 3"
+var lineText = lineArr[1]
+function StartShow() {
+StopShow()
+ShowLine()
+timerRunning = true
+}
+function FillSpaces() {
+for (var i = 1; i <= lineWidth; i++) {
+spaces += " "
+}
+}
+function StopShow() {
+if (timerRunning) {
+clearTimeout(timerID)
+timerRunning = false
+}
+}
+function ShowLine() {
+if (charNo == 0) {
+if (lineNo < lineMax) {
+lineNo++
+}
+else {
+lineNo = 1
+}
+lineText = lineArr[lineNo]
+charMax = lineText.length
+}
+if (charNo <= charMax) {
+document.formDisplay.buttonFace.value = lineText.substring(0, charNo)
+charNo++
+timerID = setTimeout("ShowLine()", 100)
+}
+else {
+charNo = 0
+timerID = setTimeout("ShowLine()", 3000)
+}
+}
+function GotoUrl(url)
+{
+RubicusFrontendIns.location.href = url
+}
+document.write("<form name="formDisplay">");
+document.write("<input type="button" name="buttonFace" value="&{lineText}" size="18" onClick="GotoUrl(urlArr[lineNo])">");
+document.write("</form>");
+StartShow();
+//]]>
+</script></span></center>
 </body>
 </html>
