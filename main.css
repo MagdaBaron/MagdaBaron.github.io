@@ -1,0 +1,86 @@
+      /* Colors */
+
+      body {
+        color:#444;
+        font-family: "Oxygen";
+        background:#213f52;
+      }
+
+      .container-fluid {
+        background: #fafafa;
+      }
+
+      h1, .h1 {
+        font-family: "Raleway";
+      }
+
+      h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        font-family: "Raleway";
+      }
+
+      .blog-title a, .blog-title a:hover {
+        color:#213f52;
+      }
+
+      .blog-description {
+        color:#213f52;
+      }
+
+      a, a:hover, a:focus, .icon-arrow-right:after, .icon-arrow-left:before {
+        color: #427ea3;
+      }
+
+      .blog-nav .active:after {
+        color:#fafafa;
+      }
+
+      .blog-nav-item, .blog-nav-item:hover {
+        color: #213f52;
+      }
+
+      [class^="icon-"], [class^="icon-"]:hover, [class*=" icon-"], [class*=" icon-"]:hover {
+        color: #213f52;
+      }
+
+      .icon-menu, .icon-menu:hover {
+        color:#213f52;
+      }
+
+      .blog-header {
+        background-image: url('https://static.tumblr.com/5c2580b06d5f4b584d79ca2da23c2f2c/k7zhxfb/0Dhnfwqwf/tumblr_static_4cike2s8zsg0oskssw8w484k4_2048_v2.jpg');
+      }
+
+      .double-bounce1, .double-bounce2 {
+        background-color: #427ea3;
+      }
+
+      .blog-sidebar, .blog-sidebar-bg, .blog-sidebar a, .blog-sidebar a:hover, #tweets, .sidebar-module h4, .blog-sidebar .blog-description, .icon-close, .icon-close:hover {
+        background-color:#213f52;
+        color:#fff;
+      }
+
+      .form-control, .form-control:active, .form-control:focus, .form-control::-webkit-input-placeholder {
+        color:#fff;
+      }
+
+      .blog-post {
+        background-color:#fff;
+      }
+
+      
+
+      
+        .blog-post-content.text .copy p:first-of-type {
+          font-size: 1.25em;
+          line-height: 1.4em;
+          color:#999;
+          margin-top:1.5em;
+        }
+      
+
+      /* minor fix */
+      .sidebar-content { padding-top: 50px !important; }
+      .icon-close, .icon-menu { top: 50px !important; }
+
+      /* Custom CSS */
+     
