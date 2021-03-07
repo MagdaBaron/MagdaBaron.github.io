@@ -1,20 +1,22 @@
 <!DOCTYPE html> <!--[if IE 8 ]> <html lang="es" class="ie8"> <![endif]--> <!--[if IE 9 ]> <html lang="es" class="ie9"> <![endif]--> <!--[if gt IE 9]> <html lang="es"> <![endif]--> <!--[if !IE]> <!--><html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Magda Baron</title>
-<link href="main.css" rel="stylesheet type="text/css">
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magda Baron</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<header>
+	<header>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de Mi</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
+			<a href="#inicio" title="inicio">Inicio</a>
+            <a href="#acercaDeMi" title="acercaDeMi">Acerca de Mi</a>
+            <a href="#proyectos" title="proyectos">Proyectos</a>
+            <a href="#contacto" title="contacto">Contacto</a>
         </nav>
-        <section class="textos-header">
-            <h1>Magda Baron</h1>
-            <h2>Visualizacion para analítica de Datos</h2>
+        <section class="textos-header"><a name="inicio"></a>
+		    <h1>Magda Baron</h1>
+            <h2>Visualización para analítica de Datos</h2>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -22,5 +24,73 @@
                     style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
+	<main>
+		<section class="acercaDeMi"><a name="acercaDeMi"></a>
+            <div class="contenedor">
+                <h2 class="titulo">Acerca de mí</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+						<h3>Magda Baron</h3>
+						<br><br>
+						<p>Soy una persona que le gusta aprender, escuchar y hacer lo mejor posible por el grupo de trabajo. 
+						Me gusta compartir mi conocimiento con mi grupo de trabajo y aportar en el proyecto con el fin de que 
+						logremos siempre el exito en un ambiente agredable.</p>
+						</div>
+						<div class="servicio-ind">
+							<h3>Estudios</h3>
+							<p>Porque el aprender y el conocimiento es mi pasión.</p>
+							<br><br>
+							<h4>Ingeniera de Sistemas</h4>
+							<h5>UPTC - 2011</h5>
+							<br>
+							<h4>Especialista en Bases de Datos</h4>
+							<h5>UPTC - 2012</h5>
+							<br>
+							<h4>Estudiante Maestría en Analítica de Datos</h4>
+							<h5>Universidad Central - Desde 2020</h5>
+						</div>
+						<div class="servicio-ind">
+							<h3>Experiencia Profesional</h3>
+							<br><br>
+							<p>He trabajado en diferentes sectores empresariales y proyectos especialmente en la banca tanto Colombiana 
+							como Mexicana de la mano con el cliente</p>
+						</div>
+				</div>
+            </div>
+		</section>
+		<section class="proyectos"><a name="proyectos"></a>
+            <div class="contenedor">
+                <h2 class="titulo">Proyectos</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <h3>Proyecto1</h3>
+						<p>Aquí pienso poner la descripción de mi proyecto1 ...</p>
+					</div>
+                    <div class="servicio-ind">
+                        <h3>Proyecto2</h3>
+                        <p>Aquí pienso poner la descripción de mi proyecto2 ...</p>
+                    </div>
+					<div class="servicio-ind">
+                        <h3>Proyecto3</h3>
+                        <p>Aquí pienso poner la descripción de mi proyecto3 ...</p>
+                    </div>
+                </div>
+            </div>
+		</section>
+		<section class="contacto"><a name="contacto"></a>
+            <h2 class="titulo">Contacto</h2>
+			<div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+					<h3><span>1</span> Correo Electrónico</h3>
+					<p> magdab.barmor@gmail.com</p>
+                    <p> mbaronm2@ucentral.edu.co</p>
+				</div>
+				<div class="contenido-textos">
+                    <h3><span>2</span> Telefono</h3>
+                    <p> +57 3214293918</p>
+                </div>
+            </div>
+        </section>
+	</main>
 </body>      
 </html>
